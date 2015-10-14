@@ -1,12 +1,8 @@
-/*global <%= appClassName %>, Backbone*/
-
-<%= appClassName %>.Routers = <%= appClassName %>.Routers || {};
-
-(function () {
+define(['backbone'], function (Backbone) {
   'use strict';
 
-  <%= appClassName %>.Routers.<%= className %> = Backbone.Router.extend({
+  return Backbone.Router.extend({
 
   });
 
-})();
+});

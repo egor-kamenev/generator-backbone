@@ -1,14 +1,9 @@
-/*global <%= appClassName %>, Backbone*/
 
-<%= appClassName %>.Collections = <%= appClassName %>.Collections || {};
-
-(function () {
+define(['backbone'], function (Backbone) {
   'use strict';
 
-  <%= appClassName %>.Collections.<%= className %> = Backbone.Collection.extend({
-
-    model: <%= appClassName %>.Models.<%= className %>
+  return Backbone.Collection.extend({
 
   });
 
-})();
+});

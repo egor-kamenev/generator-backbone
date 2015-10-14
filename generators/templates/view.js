@@ -1,11 +1,7 @@
-/*global <%= appClassName %>, Backbone, JST*/
-
-<%= appClassName %>.Views = <%= appClassName %>.Views || {};
-
-(function () {
+define(function () {
   'use strict';
 
-  <%= appClassName %>.Views.<%= className %> = Backbone.View.extend({
+  return Backbone.View.extend({
 
     template: JST['<%= jst_path %>'],
 
@@ -27,4 +23,4 @@
 
   });
 
-})();
+});
