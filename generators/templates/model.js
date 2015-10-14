@@ -1,11 +1,8 @@
-/*global <%= appClassName %>, Backbone*/
 
-<%= appClassName %>.Models = <%= appClassName %>.Models || {};
-
-(function () {
+define(['backbone'],function (Backbone) {
   'use strict';
 
-  <%= appClassName %>.Models.<%= className %> = Backbone.Model.extend({
+  return Backbone.Model.extend({
 
     url: '',
 
@@ -23,4 +20,4 @@
     }
   });
 
-})();
+});
